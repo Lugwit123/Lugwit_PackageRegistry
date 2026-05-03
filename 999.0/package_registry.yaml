@@ -13,7 +13,10 @@ packages:
   conemu: { kind: github }
   l_notepad: { kind: github }
   l_scheduler: { kind: github }
+  l_simple_gui: { kind: github }
   l_tray: { kind: github }
+  l_WChat: { kind: github }
+  l_frp: { kind: github }
   lperforce: { kind: github }
   lugwit_auth: { kind: github }
   postgresql: { kind: github }
