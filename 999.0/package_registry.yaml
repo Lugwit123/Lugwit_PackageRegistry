@@ -1,0 +1,37 @@
+# Single source of truth for wuwo auto_fetch (no wuwo fallback).
+# kind: github — clone URL = github_owner/<repo>; optional repo: "org/repo" for forks.
+# kind: pip — pip_name / python_ver
+# kind: nuget — nuget_name, nuget_ver, rez_ver, description
+# GitHub init: only rez-package-source/<name>/999.0/init.bat (not configured here).
+
+github_owner: Lugwit123
+
+packages:
+  ChatRoom: { kind: github }
+  L_Tools: { kind: github }
+  Lugwit_Module: { kind: github }
+  conemu: { kind: github }
+  l_notepad: { kind: github }
+  l_scheduler: { kind: github }
+  l_tray: { kind: github }
+  lperforce: { kind: github }
+  lugwit_auth: { kind: github }
+  postgresql: { kind: github }
+  pyfory: { kind: github }
+  pytracemp: { kind: github }
+  start_multi_app: { kind: github }
+  view_pkl_tool: { kind: github }
+
+  psutil: { kind: pip, pip_name: psutil, python_ver: "3.12" }
+  pyqt5: { kind: pip, pip_name: "PyQt5==5.15.11", python_ver: "3.12" }
+  pyside6: { kind: pip, pip_name: "PySide6==6.7.0", python_ver: "3.12" }
+  pywin32: { kind: pip, pip_name: pywin32, python_ver: "3.12" }
+  pyyaml: { kind: pip, pip_name: PyYAML, python_ver: "3.12" }
+  watchdog: { kind: pip, pip_name: watchdog, python_ver: "3.12" }
+
+  python:
+    kind: nuget
+    nuget_name: python
+    nuget_ver: "3.12.10"
+    rez_ver: "3.12.10"
+    description: "Python 3.12.10 portable (green, no system install)"
