@@ -17,7 +17,7 @@ packages:
   l_tray: { kind: github }
   l_WChat: { kind: github }
   l_frp: { kind: github }
-  repo_sync_gui: { kind: github }
+  l_repo_sync_gui: { kind: github }
   lperforce: { kind: github }
   lugwit_auth: { kind: github }
   postgresql: { kind: github }
