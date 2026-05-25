@@ -36,6 +36,13 @@ packages:
   python:
     kind: nuget
     nuget_name: python
-    nuget_ver: "3.12.10"
-    rez_ver: "3.12.10"
-    description: "Python 3.12.10 portable (green, no system install)"
+    nuget_ver: "{version}"
+    rez_ver: "{version}"
+    description: "Python {version} portable (green, no system install)"
+
+  handle:
+    kind: nuget
+    nuget_name: Sysinternals.Handle
+    nuget_ver: "latest"
+    rez_ver: "1.0.0"
+    description: "Sysinternals Handle - view process open handles (https://learn.microsoft.com/sysinternals/downloads/handle)"
