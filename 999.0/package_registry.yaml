@@ -20,6 +20,8 @@ packages:
   l_repo_sync_gui: { kind: github }
   lperforce: { kind: github }
   lugwit_auth: { kind: github }
+  l_app_ready: { kind: core-github }
+  rez_pip_installer: { kind: core-github }
   postgresql: { kind: github }
   pyfory: { kind: github }
   pytracemp: { kind: github }
