@@ -11,6 +11,7 @@ packages:
   L_Tools: { kind: github }
   Lugwit_Module: { kind: github }
   conemu: { kind: github }
+  l_media_converter: { kind: github }
   l_notepad: { kind: github }
   l_scheduler: { kind: github }
   l_simple_gui: { kind: github }
@@ -27,13 +28,74 @@ packages:
   pytracemp: { kind: github }
   start_multi_app: { kind: github }
   view_pkl_tool: { kind: github }
+  l_comfyui: { kind: github }
+  l_pynode: { kind: github }
 
+  pillow: { kind: pip, pip_name: pillow, python_ver: "3.12" }
+  pillow_heif: { kind: pip, pip_name: pillow-heif, python_ver: "3.12" }
   psutil: { kind: pip, pip_name: psutil, python_ver: "3.12" }
   pyqt5: { kind: pip, pip_name: "PyQt5==5.15.11", python_ver: "3.12" }
   pyside6: { kind: pip, pip_name: "PySide6==6.7.0", python_ver: "3.12" }
   pywin32: { kind: pip, pip_name: pywin32, python_ver: "3.12" }
   pyyaml: { kind: pip, pip_name: PyYAML, python_ver: "3.12" }
   watchdog: { kind: pip, pip_name: watchdog, python_ver: "3.12" }
+
+  # ComfyUI dependencies
+  torch:
+    kind: pip
+    pip_name: torch
+    python_ver: "3.12"
+    index_url: "https://download.pytorch.org/whl/cu130"
+  torchvision:
+    kind: pip
+    pip_name: torchvision
+    python_ver: "3.12"
+    index_url: "https://download.pytorch.org/whl/cu130"
+  torchaudio:
+    kind: pip
+    pip_name: torchaudio
+    python_ver: "3.12"
+    index_url: "https://download.pytorch.org/whl/cu130"
+  torchsde: { kind: pip, pip_name: torchsde, python_ver: "3.12" }
+  numpy: { kind: pip, pip_name: "numpy>=1.25.0", python_ver: "3.12" }
+  einops: { kind: pip, pip_name: einops, python_ver: "3.12" }
+  transformers: { kind: pip, pip_name: "transformers>=4.50.3", python_ver: "3.12" }
+  tokenizers: { kind: pip, pip_name: "tokenizers==0.22.2", python_ver: "3.12" }
+  sentencepiece: { kind: pip, pip_name: sentencepiece, python_ver: "3.12" }
+  safetensors: { kind: pip, pip_name: "safetensors>=0.4.2", python_ver: "3.12" }
+  aiohttp: { kind: pip, pip_name: "aiohttp>=3.11.8", python_ver: "3.12" }
+  yarl: { kind: pip, pip_name: "yarl>=1.18.0", python_ver: "3.12" }
+  scipy: { kind: pip, pip_name: scipy, python_ver: "3.12" }
+  tqdm: { kind: pip, pip_name: tqdm, python_ver: "3.12" }
+  alembic: { kind: pip, pip_name: alembic, python_ver: "3.12" }
+  sqlalchemy: { kind: pip, pip_name: "sqlalchemy>=2.0.0", python_ver: "3.12" }
+  filelock: { kind: pip, pip_name: filelock, python_ver: "3.12" }
+  av: { kind: pip, pip_name: "av>=16.0.0", python_ver: "3.12" }
+  requests: { kind: pip, pip_name: requests, python_ver: "3.12" }
+  simpleeval: { kind: pip, pip_name: "simpleeval>=1.0.0", python_ver: "3.12" }
+  blake3: { kind: pip, pip_name: blake3, python_ver: "3.12" }
+  kornia: { kind: pip, pip_name: "kornia>=0.7.1", python_ver: "3.12" }
+  spandrel: { kind: pip, pip_name: spandrel, python_ver: "3.12" }
+  trampoline: { kind: pip, pip_name: trampoline, python_ver: "3.12" }
+  # torch dependencies
+  typing_extensions: { kind: pip, pip_name: "typing-extensions>=4.10.0", python_ver: "3.12" }
+  setuptools: { kind: pip, pip_name: "setuptools<82", python_ver: "3.12" }
+  sympy: { kind: pip, pip_name: "sympy>=1.13.3", python_ver: "3.12" }
+  networkx: { kind: pip, pip_name: "networkx>=2.5.1", python_ver: "3.12" }
+  jinja2: { kind: pip, pip_name: jinja2, python_ver: "3.12" }
+  fsspec: { kind: pip, pip_name: "fsspec>=0.8.5", python_ver: "3.12" }
+  kornia_rs: { kind: pip, pip_name: kornia-rs, python_ver: "3.12" }
+  coloredlogs: { kind: pip, pip_name: coloredlogs, python_ver: "3.12" }
+  openai: { kind: pip, pip_name: openai, python_ver: "3.12" }
+  pydantic: { kind: pip, pip_name: "pydantic~=2.0", python_ver: "3.12" }
+  pydantic_settings: { kind: pip, pip_name: "pydantic-settings~=2.0", python_ver: "3.12" }
+  pyopengl: { kind: pip, pip_name: "PyOpenGL>=3.1.8", python_ver: "3.12" }
+  comfyui_frontend_package: { kind: pip, pip_name: comfyui-frontend-package==1.45.20, python_ver: "3.12" }
+  comfyui_workflow_templates: { kind: pip, pip_name: comfyui-workflow-templates==0.11.2, python_ver: "3.12" }
+  comfyui_embedded_docs: { kind: pip, pip_name: comfyui-embedded-docs==0.5.7, python_ver: "3.12" }
+  comfy_kitchen: { kind: pip, pip_name: comfy-kitchen==0.2.16, python_ver: "3.12" }
+  comfy_aimdo: { kind: pip, pip_name: comfy-aimdo==0.4.10, python_ver: "3.12" }
+  comfy_angle: { kind: pip, pip_name: comfy-angle, python_ver: "3.12" }
 
   python:
     kind: nuget
